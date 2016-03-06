@@ -10,6 +10,7 @@
 #import "CBIHomeViewController.h"
 #import "CBIRequestManager.h"
 #import <MRProgress.h>
+#import "CBIGridViewController.h"
 @interface CBILoginViewController ()<UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
@@ -58,6 +59,11 @@
                         dispatch_async(dispatch_get_main_queue(), ^{
                             UITabBarController * tempTabbar = [self.storyboard instantiateViewControllerWithIdentifier:@"CBITabbar"];
                             ((CBIHomeViewController*)((UINavigationController*)tempTabbar.viewControllers.firstObject).viewControllers.firstObject).posts =[response mutableCopy];
+                            
+                            
+                            ((CBIGridViewController*)((UINavigationController*)tempTabbar.viewControllers[1]).viewControllers.firstObject).posts =[response mutableCopy];
+
+                            
                             [self presentViewController:tempTabbar animated:YES completion:nil];
                             
                         });

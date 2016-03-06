@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CBICollectionViewCell" id="gTV-IL-0wX" customClass="CBICollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5A-3O-8Kv">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="GK5-7T-wBb"/>
+                            <constraint firstAttribute="height" constant="100" id="nXb-Tz-CQm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GK5-7T-wBb"/>
+                                <exclude reference="nXb-Tz-CQm"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g5A-3O-8Kv" secondAttribute="bottom" id="1fK-7B-5f8"/>
+                <constraint firstItem="g5A-3O-8Kv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Td-dP-YS1"/>
+                <constraint firstAttribute="bottom" secondItem="g5A-3O-8Kv" secondAttribute="bottom" id="JtY-n1-L7o"/>
+                <constraint firstAttribute="trailing" secondItem="g5A-3O-8Kv" secondAttribute="trailing" id="VIp-Q9-sIa"/>
+                <constraint firstItem="g5A-3O-8Kv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X7g-7d-haA"/>
+                <constraint firstAttribute="trailing" secondItem="g5A-3O-8Kv" secondAttribute="trailing" id="bLO-Gb-vg2"/>
+                <constraint firstItem="g5A-3O-8Kv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bvn-8q-UDh"/>
+                <constraint firstItem="g5A-3O-8Kv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eO1-Qc-bho"/>
+                <constraint firstItem="g5A-3O-8Kv" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="rtj-Ay-yCg"/>
+                <constraint firstItem="g5A-3O-8Kv" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="sXU-Oz-sdu"/>
+            </constraints>
+            <size key="customSize" width="63" height="55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1fK-7B-5f8"/>
+                    <exclude reference="6Td-dP-YS1"/>
+                    <exclude reference="X7g-7d-haA"/>
+                    <exclude reference="bLO-Gb-vg2"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="thumbnail" destination="g5A-3O-8Kv" id="xjo-Jr-AUP"/>
+            </connections>
+            <point key="canvasLocation" x="330.5" y="335.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

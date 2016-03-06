@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CBIProfileCell" id="gTV-IL-0wX" customClass="CBIProfileCell">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="82"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-jy-W3w">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Kll-sb-HMf"/>
+                            <constraint firstAttribute="height" constant="50" id="e4C-Dl-77k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rG0-c5-8xw">
+                        <rect key="frame" x="73" y="20" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rG0-c5-8xw" secondAttribute="trailing" constant="100" id="4IY-rN-Se2"/>
+                <constraint firstItem="rG0-c5-8xw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="5A8-sD-YgS"/>
+                <constraint firstAttribute="bottom" secondItem="XJ8-jy-W3w" secondAttribute="bottom" constant="27" id="GjV-sQ-rjw"/>
+                <constraint firstAttribute="bottom" secondItem="rG0-c5-8xw" secondAttribute="bottom" constant="41" id="Ub8-N5-W3j"/>
+                <constraint firstItem="rG0-c5-8xw" firstAttribute="leading" secondItem="XJ8-jy-W3w" secondAttribute="trailing" constant="15" id="f81-N7-2m8"/>
+                <constraint firstItem="XJ8-jy-W3w" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="fYl-Mq-LKQ"/>
+                <constraint firstItem="XJ8-jy-W3w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ou0-cJ-TQx"/>
+                <constraint firstItem="rG0-c5-8xw" firstAttribute="leading" secondItem="XJ8-jy-W3w" secondAttribute="trailing" constant="10" id="tHG-Wv-JS3"/>
+            </constraints>
+            <size key="customSize" width="344" height="82"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GjV-sQ-rjw"/>
+                    <exclude reference="4IY-rN-Se2"/>
+                    <exclude reference="Ub8-N5-W3j"/>
+                    <exclude reference="tHG-Wv-JS3"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="avatar" destination="XJ8-jy-W3w" id="M3d-79-3Kz"/>
+                <outlet property="username" destination="rG0-c5-8xw" id="tGb-7j-a6E"/>
+            </connections>
+            <point key="canvasLocation" x="264" y="207"/>
+        </collectionViewCell>
+    </objects>
+</document>
