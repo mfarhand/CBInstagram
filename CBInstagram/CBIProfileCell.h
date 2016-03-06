@@ -12,6 +12,7 @@
 @interface CBIProfileCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *username;
+@property (strong, nonatomic) IBOutlet UILabel *bio;
 @property (strong, nonatomic) IBOutlet UIImageView *avatar;
 @property (strong, nonatomic) CBIMediaUserEntity * myInfo;
 

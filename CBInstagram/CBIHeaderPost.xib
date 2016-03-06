@@ -44,7 +44,7 @@
                             </mask>
                         </variation>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_5449.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-Cr-Ewv">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-Cr-Ewv">
                         <rect key="frame" x="8" y="8" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="NvE-iP-Njn"/>
@@ -82,7 +82,4 @@
             <point key="canvasLocation" x="484" y="143"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="IMG_5449.JPG" width="2448" height="3264"/>
-    </resources>
 </document>

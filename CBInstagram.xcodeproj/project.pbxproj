@@ -23,7 +23,6 @@
 		D1B05B4D1C8C0A560040724B /* CBIPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B4C1C8C0A560040724B /* CBIPostCell.xib */; };
 		D1B05B521C8C0ADC0040724B /* CBIHeaderPost.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B511C8C0ADC0040724B /* CBIHeaderPost.m */; };
 		D1B05B541C8C0B030040724B /* CBIHeaderPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B531C8C0B030040724B /* CBIHeaderPost.xib */; };
-		D1B05B561C8C0F770040724B /* IMG_5449.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B551C8C0F770040724B /* IMG_5449.JPG */; };
 		D1B05B591C8C1FB20040724B /* CBIGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B581C8C1FB20040724B /* CBIGridViewController.m */; };
 		D1B05B5E1C8C21550040724B /* CBICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B5C1C8C21550040724B /* CBICollectionViewCell.m */; };
 		D1B05B5F1C8C21550040724B /* CBICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B5D1C8C21550040724B /* CBICollectionViewCell.xib */; };
@@ -67,7 +66,6 @@
 		D1B05B501C8C0ADC0040724B /* CBIHeaderPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIHeaderPost.h; sourceTree = "<group>"; };
 		D1B05B511C8C0ADC0040724B /* CBIHeaderPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIHeaderPost.m; sourceTree = "<group>"; };
 		D1B05B531C8C0B030040724B /* CBIHeaderPost.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBIHeaderPost.xib; sourceTree = "<group>"; };
-		D1B05B551C8C0F770040724B /* IMG_5449.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5449.JPG; sourceTree = "<group>"; };
 		D1B05B571C8C1FB20040724B /* CBIGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIGridViewController.h; sourceTree = "<group>"; };
 		D1B05B581C8C1FB20040724B /* CBIGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIGridViewController.m; sourceTree = "<group>"; };
 		D1B05B5B1C8C21550040724B /* CBICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBICollectionViewCell.h; sourceTree = "<group>"; };
@@ -299,7 +297,6 @@
 		D1E76B801C8B51190090EE6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1B05B551C8C0F770040724B /* IMG_5449.JPG */,
 				D1E76B811C8B51190090EE6B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -372,7 +369,6 @@
 				D1E76B931C8B511C0090EE6B /* LaunchScreen.storyboard in Resources */,
 				D1E76B901C8B511C0090EE6B /* Assets.xcassets in Resources */,
 				D1B05B541C8C0B030040724B /* CBIHeaderPost.xib in Resources */,
-				D1B05B561C8C0F770040724B /* IMG_5449.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

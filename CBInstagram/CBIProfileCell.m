@@ -20,6 +20,7 @@
 {
     self.username.text = self.myInfo.full_name;
     self.avatar.image =  [[CBIImageCache sharedInstance] getImageByToken:self.myInfo.my_profile_picture];
+    self.bio.text = self.myInfo.bio;
 }
 
 
