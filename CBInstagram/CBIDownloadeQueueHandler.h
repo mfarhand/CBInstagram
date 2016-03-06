@@ -11,7 +11,7 @@
 #import "GCDMulticastDelegate.h"
 
 
-@protocol GLDownloadQueueDelegate <NSObject>
+@protocol CBIDownloadQueueDelegate <NSObject>
 
 -(void)downloadDidFinishedWithToken:(NSString*)token withFileName:(NSString*)filename;
 
@@ -34,7 +34,7 @@
 @property (nonatomic,strong) NSMutableArray * currentDownloadQueue;
 @property (nonatomic,strong) NSMutableDictionary * tokensDict;
 @property (nonatomic,strong) NSOperationQueue * operationQueue;
-@property (nonatomic,strong) id <GLDownloadQueueDelegate>delegate;
+@property (nonatomic,strong) id <CBIDownloadQueueDelegate>delegate;
 @property (readonly) dispatch_queue_t moduleQueue;
 @property (readonly) void *moduleQueueTag;
 

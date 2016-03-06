@@ -12,9 +12,20 @@
 		D1206ABF1C8B535D00240EB5 /* CBIMediaUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D1206ABE1C8B535D00240EB5 /* CBIMediaUserEntity.m */; };
 		D1206AC21C8B543800240EB5 /* CBIDownloadeQueueHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D1206AC11C8B543800240EB5 /* CBIDownloadeQueueHandler.m */; };
 		D1206AC61C8B547B00240EB5 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1206AC51C8B547B00240EB5 /* GCDMulticastDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D1B05B2F1C8C051C0040724B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B2E1C8C051C0040724B /* Main.storyboard */; };
+		D1B05B331C8C059E0040724B /* CBITabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B321C8C059E0040724B /* CBITabbar.m */; };
+		D1B05B371C8C060A0040724B /* CBIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B361C8C060A0040724B /* CBIHomeViewController.m */; };
+		D1B05B3B1C8C07510040724B /* CBIPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B3A1C8C07510040724B /* CBIPostCell.m */; };
+		D1B05B3F1C8C08170040724B /* CBIImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B3E1C8C08170040724B /* CBIImageCache.m */; };
+		D1B05B441C8C08B80040724B /* CBIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B431C8C08B80040724B /* CBIRequestManager.m */; };
+		D1B05B471C8C09650040724B /* CBILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B461C8C09650040724B /* CBILoginViewController.m */; };
+		D1B05B4B1C8C0A370040724B /* CBILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B4A1C8C0A370040724B /* CBILabel.m */; };
+		D1B05B4D1C8C0A560040724B /* CBIPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B4C1C8C0A560040724B /* CBIPostCell.xib */; };
+		D1B05B521C8C0ADC0040724B /* CBIHeaderPost.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B511C8C0ADC0040724B /* CBIHeaderPost.m */; };
+		D1B05B541C8C0B030040724B /* CBIHeaderPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B531C8C0B030040724B /* CBIHeaderPost.xib */; };
+		D1B05B561C8C0F770040724B /* IMG_5449.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B551C8C0F770040724B /* IMG_5449.JPG */; };
 		D1E76B821C8B51190090EE6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E76B811C8B51190090EE6B /* main.m */; };
 		D1E76B851C8B511A0090EE6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E76B841C8B511A0090EE6B /* AppDelegate.m */; };
-		D1E76B8E1C8B511A0090EE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E76B8C1C8B511A0090EE6B /* Main.storyboard */; };
 		D1E76B901C8B511C0090EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E76B8F1C8B511C0090EE6B /* Assets.xcassets */; };
 		D1E76B931C8B511C0090EE6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E76B911C8B511C0090EE6B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -31,11 +42,30 @@
 		D1206AC11C8B543800240EB5 /* CBIDownloadeQueueHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIDownloadeQueueHandler.m; sourceTree = "<group>"; };
 		D1206AC41C8B547B00240EB5 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
 		D1206AC51C8B547B00240EB5 /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		D1B05B2E1C8C051C0040724B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D1B05B311C8C059E0040724B /* CBITabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBITabbar.h; sourceTree = "<group>"; };
+		D1B05B321C8C059E0040724B /* CBITabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBITabbar.m; sourceTree = "<group>"; };
+		D1B05B351C8C060A0040724B /* CBIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIHomeViewController.h; sourceTree = "<group>"; };
+		D1B05B361C8C060A0040724B /* CBIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIHomeViewController.m; sourceTree = "<group>"; };
+		D1B05B391C8C07510040724B /* CBIPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIPostCell.h; sourceTree = "<group>"; };
+		D1B05B3A1C8C07510040724B /* CBIPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIPostCell.m; sourceTree = "<group>"; };
+		D1B05B3D1C8C08170040724B /* CBIImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIImageCache.h; sourceTree = "<group>"; };
+		D1B05B3E1C8C08170040724B /* CBIImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIImageCache.m; sourceTree = "<group>"; };
+		D1B05B421C8C08B80040724B /* CBIRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIRequestManager.h; sourceTree = "<group>"; };
+		D1B05B431C8C08B80040724B /* CBIRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIRequestManager.m; sourceTree = "<group>"; };
+		D1B05B451C8C09650040724B /* CBILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBILoginViewController.h; sourceTree = "<group>"; };
+		D1B05B461C8C09650040724B /* CBILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBILoginViewController.m; sourceTree = "<group>"; };
+		D1B05B491C8C0A370040724B /* CBILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBILabel.h; sourceTree = "<group>"; };
+		D1B05B4A1C8C0A370040724B /* CBILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBILabel.m; sourceTree = "<group>"; };
+		D1B05B4C1C8C0A560040724B /* CBIPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBIPostCell.xib; sourceTree = "<group>"; };
+		D1B05B501C8C0ADC0040724B /* CBIHeaderPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIHeaderPost.h; sourceTree = "<group>"; };
+		D1B05B511C8C0ADC0040724B /* CBIHeaderPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIHeaderPost.m; sourceTree = "<group>"; };
+		D1B05B531C8C0B030040724B /* CBIHeaderPost.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBIHeaderPost.xib; sourceTree = "<group>"; };
+		D1B05B551C8C0F770040724B /* IMG_5449.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5449.JPG; sourceTree = "<group>"; };
 		D1E76B7D1C8B51190090EE6B /* CBInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E76B811C8B51190090EE6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1E76B831C8B51190090EE6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1E76B841C8B511A0090EE6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D1E76B8D1C8B511A0090EE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1E76B8F1C8B511C0090EE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1E76B921C8B511C0090EE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1E76B941C8B511D0090EE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +138,94 @@
 			name = MultiCastDelegate;
 			sourceTree = "<group>";
 		};
+		D1B05B301C8C05540040724B /* CBITabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B311C8C059E0040724B /* CBITabbar.h */,
+				D1B05B321C8C059E0040724B /* CBITabbar.m */,
+			);
+			name = CBITabbar;
+			sourceTree = "<group>";
+		};
+		D1B05B341C8C05ED0040724B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B351C8C060A0040724B /* CBIHomeViewController.h */,
+				D1B05B361C8C060A0040724B /* CBIHomeViewController.m */,
+				D1B05B451C8C09650040724B /* CBILoginViewController.h */,
+				D1B05B461C8C09650040724B /* CBILoginViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D1B05B381C8C07300040724B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B4F1C8C0AB70040724B /* CustomHeader */,
+				D1B05B4E1C8C0AA80040724B /* CustomCell */,
+				D1B05B481C8C0A220040724B /* CBILabel */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		D1B05B3C1C8C07FF0040724B /* CBIIMageCache */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B3D1C8C08170040724B /* CBIImageCache.h */,
+				D1B05B3E1C8C08170040724B /* CBIImageCache.m */,
+			);
+			name = CBIIMageCache;
+			sourceTree = "<group>";
+		};
+		D1B05B401C8C087D0040724B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B411C8C08A60040724B /* CBIRequestManager */,
+				D1B05B3C1C8C07FF0040724B /* CBIIMageCache */,
+				D1206ABC1C8B532200240EB5 /* Model */,
+				D1206ABB1C8B530E00240EB5 /* CBIDownloader */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D1B05B411C8C08A60040724B /* CBIRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B421C8C08B80040724B /* CBIRequestManager.h */,
+				D1B05B431C8C08B80040724B /* CBIRequestManager.m */,
+			);
+			name = CBIRequestManager;
+			sourceTree = "<group>";
+		};
+		D1B05B481C8C0A220040724B /* CBILabel */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B491C8C0A370040724B /* CBILabel.h */,
+				D1B05B4A1C8C0A370040724B /* CBILabel.m */,
+			);
+			name = CBILabel;
+			sourceTree = "<group>";
+		};
+		D1B05B4E1C8C0AA80040724B /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B391C8C07510040724B /* CBIPostCell.h */,
+				D1B05B3A1C8C07510040724B /* CBIPostCell.m */,
+				D1B05B4C1C8C0A560040724B /* CBIPostCell.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		D1B05B4F1C8C0AB70040724B /* CustomHeader */ = {
+			isa = PBXGroup;
+			children = (
+				D1B05B501C8C0ADC0040724B /* CBIHeaderPost.h */,
+				D1B05B511C8C0ADC0040724B /* CBIHeaderPost.m */,
+				D1B05B531C8C0B030040724B /* CBIHeaderPost.xib */,
+			);
+			name = CustomHeader;
+			sourceTree = "<group>";
+		};
 		D1E76B741C8B51180090EE6B = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +247,15 @@
 		D1E76B7F1C8B51190090EE6B /* CBInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				D1B05B401C8C087D0040724B /* Core */,
+				D1B05B381C8C07300040724B /* CustomView */,
+				D1B05B341C8C05ED0040724B /* ViewControllers */,
+				D1B05B301C8C05540040724B /* CBITabbar */,
 				D1206AC31C8B546600240EB5 /* MultiCastDelegate */,
-				D1206ABC1C8B532200240EB5 /* Model */,
-				D1206ABB1C8B530E00240EB5 /* CBIDownloader */,
 				D1206AB71C8B52D800240EB5 /* AppDelegate */,
-				D1E76B8C1C8B511A0090EE6B /* Main.storyboard */,
 				D1E76B8F1C8B511C0090EE6B /* Assets.xcassets */,
 				D1E76B911C8B511C0090EE6B /* LaunchScreen.storyboard */,
+				D1B05B2E1C8C051C0040724B /* Main.storyboard */,
 				D1E76B941C8B511D0090EE6B /* Info.plist */,
 				D1E76B801C8B51190090EE6B /* Supporting Files */,
 			);
@@ -145,6 +265,7 @@
 		D1E76B801C8B51190090EE6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1B05B551C8C0F770040724B /* IMG_5449.JPG */,
 				D1E76B811C8B51190090EE6B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -210,9 +331,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B05B4D1C8C0A560040724B /* CBIPostCell.xib in Resources */,
+				D1B05B2F1C8C051C0040724B /* Main.storyboard in Resources */,
 				D1E76B931C8B511C0090EE6B /* LaunchScreen.storyboard in Resources */,
 				D1E76B901C8B511C0090EE6B /* Assets.xcassets in Resources */,
-				D1E76B8E1C8B511A0090EE6B /* Main.storyboard in Resources */,
+				D1B05B541C8C0B030040724B /* CBIHeaderPost.xib in Resources */,
+				D1B05B561C8C0F770040724B /* IMG_5449.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,26 +395,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B05B371C8C060A0040724B /* CBIHomeViewController.m in Sources */,
 				D1E76B851C8B511A0090EE6B /* AppDelegate.m in Sources */,
+				D1B05B331C8C059E0040724B /* CBITabbar.m in Sources */,
 				D1206ABF1C8B535D00240EB5 /* CBIMediaUserEntity.m in Sources */,
+				D1B05B441C8C08B80040724B /* CBIRequestManager.m in Sources */,
+				D1B05B4B1C8C0A370040724B /* CBILabel.m in Sources */,
+				D1B05B471C8C09650040724B /* CBILoginViewController.m in Sources */,
 				D1E76B821C8B51190090EE6B /* main.m in Sources */,
+				D1B05B3B1C8C07510040724B /* CBIPostCell.m in Sources */,
 				D1206ABA1C8B530800240EB5 /* CBIDownloder.m in Sources */,
 				D1206AC61C8B547B00240EB5 /* GCDMulticastDelegate.m in Sources */,
 				D1206AC21C8B543800240EB5 /* CBIDownloadeQueueHandler.m in Sources */,
+				D1B05B3F1C8C08170040724B /* CBIImageCache.m in Sources */,
+				D1B05B521C8C0ADC0040724B /* CBIHeaderPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D1E76B8C1C8B511A0090EE6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1E76B8D1C8B511A0090EE6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D1E76B911C8B511C0090EE6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

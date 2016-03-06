@@ -92,7 +92,7 @@
 }
 
 
-#pragma marks GLDownloder Delegate
+#pragma marks CBIDownloder Delegate
 
 -(void)downloadDidContinueWithProgress:(NSProgress *)progress forToken:(NSString *)token
 {

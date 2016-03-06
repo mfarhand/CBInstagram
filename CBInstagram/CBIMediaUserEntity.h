@@ -17,6 +17,7 @@
 @property (nonatomic,strong) NSString *full_name;
 @property (nonatomic,strong) NSString *text;
 @property (nonatomic,strong) NSDictionary *images;
+@property (nonatomic,strong) NSDictionary *from;
 @property (nonatomic,strong) NSString *standard_resolution_url;
 
 @end
