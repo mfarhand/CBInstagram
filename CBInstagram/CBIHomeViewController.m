@@ -116,8 +116,9 @@
     CBIHeaderPost * customHeaderCell = [tableView dequeueReusableCellWithIdentifier:@"CBIHeaderPost"];
     
     CBIMediaUserEntity * tempEntity = [self.posts objectAtIndex:section];
-    customHeaderCell.timeStamp.text = @"5H";
-    customHeaderCell.userName.text = tempEntity.username;
+
+    customHeaderCell.metaInfo = tempEntity;
+    [customHeaderCell configure];
     return customHeaderCell;
 }
 

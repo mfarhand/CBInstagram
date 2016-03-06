@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CBIMediaUserEntity.h"
 #define  Clinet_ID  @"d12770e225be4403adc596f5099f4235"
 #define  Redirect_URL  @"https://instagram.com"
 
@@ -20,4 +21,7 @@
 +(instancetype)sharedManager;
 -(void)getTokenWithInstagramWithVerifier:(NSString*)verifier withCompletion:(void (^)(NSData * response,NSError * error))result;
 -(void)getAllOfImagesWithToken:(NSString*)token WithCompletion:(void (^)(NSArray * response,NSError * error))result;
+
+-(void)getSelfInformationWithToken:(NSString*)token WithCopletion:(void (^)(CBIMediaUserEntity* selfInfo))result;
+                                                                                
 @end

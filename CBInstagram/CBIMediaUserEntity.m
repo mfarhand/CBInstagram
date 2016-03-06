@@ -22,6 +22,8 @@
         self.standard_resolution_url = [[self.images objectForKey:@"standard_resolution"] objectForKey:@"url"];
         self.text = [self.caption objectForKey:@"text"];
         self.username = [[dict objectForKey:@"user"] objectForKey:@"username"];
+        self.profile_picture = [[dict objectForKey:@"user"] objectForKey:@"profile_picture"];
+        self.my_profile_picture = [dict objectForKey:@"profile_picture"];
         
     }
     return self;

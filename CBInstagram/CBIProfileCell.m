@@ -18,8 +18,8 @@
 
 -(void)setup
 {
-    self.username.text = self.myInfo.username;
-    self.avatar.image =  [[CBIImageCache sharedInstance] getImageByToken:self.myInfo.standard_resolution_url];
+    self.username.text = self.myInfo.full_name;
+    self.avatar.image =  [[CBIImageCache sharedInstance] getImageByToken:self.myInfo.my_profile_picture];
 }
 
 

@@ -11,6 +11,7 @@
 #import "CBIRequestManager.h"
 #import <MRProgress.h>
 #import "CBIGridViewController.h"
+#import "CBISelfProvider.h"
 @interface CBILoginViewController ()<UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
@@ -54,6 +55,12 @@
                 NSDictionary * responseDict = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingAllowFragments error:&error];
                 if (responseDict) {
                     token = [responseDict objectForKey:@"access_token"];
+                    
+                    
+                    [[CBIRequestManager sharedManager]getSelfInformationWithToken:token WithCopletion:^(CBIMediaUserEntity *selfInfo) {
+                        NSLog(@"%@",selfInfo);
+                        [[CBISelfProvider sharedInstance]setSelfInformation:selfInfo];
+                    }];
                     
                     [[CBIRequestManager sharedManager]getAllOfImagesWithToken:token WithCompletion:^(NSArray *response, NSError *error) {
                         dispatch_async(dispatch_get_main_queue(), ^{

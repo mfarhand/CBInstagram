@@ -108,4 +108,43 @@
     
     [task resume];
 }
+
+
+
+-(void)getSelfInformationWithToken:(NSString*)token WithCopletion:(void (^)(CBIMediaUserEntity* selfInfo))result
+{
+    
+    
+    NSURL * selfURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.instagram.com/v1/users/self/?access_token=%@",token]];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:[NSURLRequest requestWithURL:selfURL]
+                                            completionHandler:
+                                  ^(NSData *data, NSURLResponse *response, NSError *error) {
+                                      
+                                      if (error) {
+                                          // Handle error...
+                                          return;
+                                      }
+                                      
+                                      if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+                                          NSLog(@"Response HTTP Status code: %ld\n", (long)[(NSHTTPURLResponse *)response statusCode]);
+                                          NSLog(@"Response HTTP Headers:\n%@\n", [(NSHTTPURLResponse *)response allHeaderFields]);
+                                      }
+                                      
+                                      
+                                      NSDictionary * responseDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+                                      
+                                          CBIMediaUserEntity * selfInformation = [[CBIMediaUserEntity alloc]initWithDictionary:[responseDict objectForKey:@"data"] error:nil];
+   
+                                      
+                                      result(selfInformation);
+                                      
+                                  }];
+    
+    [task resume];
+    
+}
+
+
 @end

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CBIHeaderPost : UITableViewCell
+#import "CBIDownloadeQueueHandler.h"
+#import "CBIMediaUserEntity.h"
+@interface CBIHeaderPost : UITableViewCell<CBIDownloadQueueDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *userName;
 @property (strong, nonatomic) IBOutlet UIImageView *avatar;
 @property (strong, nonatomic) IBOutlet UILabel *timeStamp;
+@property (strong, nonatomic) CBIMediaUserEntity * metaInfo;
+
+-(void)configure;
 @end

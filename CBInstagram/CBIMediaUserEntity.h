@@ -19,5 +19,8 @@
 @property (nonatomic,strong) NSDictionary *images;
 @property (nonatomic,strong) NSDictionary *from;
 @property (nonatomic,strong) NSString *standard_resolution_url;
+@property (nonatomic,strong) NSString * profile_picture;
+@property (nonatomic,strong) NSString * my_profile_picture;
+@property (nonatomic,strong) NSString * bio;
 
 @end

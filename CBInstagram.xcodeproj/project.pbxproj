@@ -29,6 +29,7 @@
 		D1B05B5F1C8C21550040724B /* CBICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B5D1C8C21550040724B /* CBICollectionViewCell.xib */; };
 		D1B05B681C8C398F0040724B /* CBIProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B661C8C398F0040724B /* CBIProfileCell.m */; };
 		D1B05B691C8C398F0040724B /* CBIProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B05B671C8C398F0040724B /* CBIProfileCell.xib */; };
+		D1B05B6C1C8C4B220040724B /* CBISelfProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B05B6B1C8C4B220040724B /* CBISelfProvider.m */; };
 		D1E76B821C8B51190090EE6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E76B811C8B51190090EE6B /* main.m */; };
 		D1E76B851C8B511A0090EE6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E76B841C8B511A0090EE6B /* AppDelegate.m */; };
 		D1E76B901C8B511C0090EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E76B8F1C8B511C0090EE6B /* Assets.xcassets */; };
@@ -75,6 +76,8 @@
 		D1B05B651C8C398F0040724B /* CBIProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIProfileCell.h; sourceTree = "<group>"; };
 		D1B05B661C8C398F0040724B /* CBIProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIProfileCell.m; sourceTree = "<group>"; };
 		D1B05B671C8C398F0040724B /* CBIProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBIProfileCell.xib; sourceTree = "<group>"; };
+		D1B05B6A1C8C4B220040724B /* CBISelfProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBISelfProvider.h; sourceTree = "<group>"; };
+		D1B05B6B1C8C4B220040724B /* CBISelfProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBISelfProvider.m; sourceTree = "<group>"; };
 		D1E76B7D1C8B51190090EE6B /* CBInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E76B811C8B51190090EE6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1E76B831C8B51190090EE6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 			children = (
 				D1206ABD1C8B535D00240EB5 /* CBIMediaUserEntity.h */,
 				D1206ABE1C8B535D00240EB5 /* CBIMediaUserEntity.m */,
+				D1B05B6A1C8C4B220040724B /* CBISelfProvider.h */,
+				D1B05B6B1C8C4B220040724B /* CBISelfProvider.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 				D1B05B681C8C398F0040724B /* CBIProfileCell.m in Sources */,
 				D1B05B591C8C1FB20040724B /* CBIGridViewController.m in Sources */,
 				D1206AC21C8B543800240EB5 /* CBIDownloadeQueueHandler.m in Sources */,
+				D1B05B6C1C8C4B220040724B /* CBISelfProvider.m in Sources */,
 				D1B05B3F1C8C08170040724B /* CBIImageCache.m in Sources */,
 				D1B05B521C8C0ADC0040724B /* CBIHeaderPost.m in Sources */,
 			);

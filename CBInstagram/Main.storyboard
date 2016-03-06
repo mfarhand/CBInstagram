@@ -60,19 +60,27 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fs3-YW-xHa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="AvE-Y2-W7f"/>
-                                    <constraint firstAttribute="height" constant="600" id="akp-ZE-d2n"/>
-                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fs3-YW-xHa" firstAttribute="top" secondItem="xM4-3R-ipM" secondAttribute="top" id="Bsh-z6-la9"/>
                             <constraint firstItem="pZm-7e-rGx" firstAttribute="top" secondItem="fs3-YW-xHa" secondAttribute="bottom" id="Ds6-iz-R8L"/>
                             <constraint firstItem="fs3-YW-xHa" firstAttribute="leading" secondItem="xM4-3R-ipM" secondAttribute="leadingMargin" constant="-20" id="ESy-1y-I9M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fs3-YW-xHa" secondAttribute="trailing" constant="-20" id="Llb-51-3mv"/>
+                            <constraint firstItem="pZm-7e-rGx" firstAttribute="top" secondItem="fs3-YW-xHa" secondAttribute="bottom" id="dys-GO-gmb"/>
+                            <constraint firstAttribute="trailing" secondItem="fs3-YW-xHa" secondAttribute="trailing" id="kzd-aT-Lq3"/>
                             <constraint firstItem="fs3-YW-xHa" firstAttribute="top" secondItem="xM4-3R-ipM" secondAttribute="topMargin" id="lfs-tt-E4Q"/>
+                            <constraint firstItem="fs3-YW-xHa" firstAttribute="leading" secondItem="xM4-3R-ipM" secondAttribute="leading" id="xC9-pG-7hI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ESy-1y-I9M"/>
+                                <exclude reference="Llb-51-3mv"/>
+                                <exclude reference="lfs-tt-E4Q"/>
+                                <exclude reference="Ds6-iz-R8L"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="zt2-ha-Wey"/>
                     <connections>

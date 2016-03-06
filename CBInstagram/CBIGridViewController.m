@@ -9,6 +9,7 @@
 #import "CBIGridViewController.h"
 #import "CBICollectionViewCell.h"
 #import "CBIProfileCell.h"
+#import "CBISelfProvider.h"
 @interface CBIGridViewController ()
 
 @end
@@ -83,7 +84,7 @@ static NSString * const reuseIdentifier = @"CBICollectionViewCell";
     
     if (indexPath.section == 0) {
         CBIProfileCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CBIProfileCell" forIndexPath:indexPath];
-        cell.myInfo = self.posts.firstObject;
+        cell.myInfo = [[CBISelfProvider sharedInstance]selfInformation];
         [cell setup];
         
         return cell;
@@ -124,7 +125,7 @@ static NSString * const reuseIdentifier = @"CBICollectionViewCell";
 
 #pragma mark collection view cell paddings
 - (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(5, 15, 2, 15); // top, left, bottom, right
+    return UIEdgeInsetsMake(5, 10, 2, 10); // top, left, bottom, right
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
