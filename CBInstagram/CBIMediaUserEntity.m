@@ -7,7 +7,7 @@
 //
 
 #import "CBIMediaUserEntity.h"
-
+#import <DateTools.h>
 @implementation CBIMediaUserEntity
 
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
@@ -26,6 +26,10 @@
         self.my_profile_picture = [dict objectForKey:@"profile_picture"];
         self.width = [[self.images objectForKey:@"standard_resolution"]valueForKey:@"width"];
         self.height = [[self.images objectForKey:@"standard_resolution"]valueForKey:@"height"];
+
+        
+        NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.created_time.doubleValue];
+        self.finaltimeStamp = [date shortTimeAgoSinceNow];
         
     }
     return self;

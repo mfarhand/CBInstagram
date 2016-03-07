@@ -10,5 +10,6 @@ target 'CBInstagram' do
     pod 'JSONModel'
     pod 'Fabric'
     pod 'Crashlytics'
+    pod 'DateTools'
 end
 

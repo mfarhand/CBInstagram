@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
+  - DateTools (1.7.0)
   - Fabric (1.6.6)
   - JSONModel (1.2.0)
   - MRProgress (0.8.3):
@@ -51,6 +52,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Crashlytics
+  - DateTools
   - Fabric
   - JSONModel
   - MRProgress
@@ -59,6 +61,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   Fabric: 1abc1e59f11fa39ede6f690ef7309d8563e3ec59
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09

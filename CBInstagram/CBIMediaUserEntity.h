@@ -24,5 +24,10 @@
 @property (nonatomic,strong) NSString * bio;
 @property (nonatomic,assign) NSString * width;
 @property (nonatomic,assign) NSString * height;
+@property (nonatomic,strong) NSString * created_time;
+@property (nonatomic,strong) NSString * finaltimeStamp;
+
+
+
 
 @end

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CBIMediaUserEntity initWithDictionary:error:]:CBIMediaUserEntity.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.finaltimeStamp ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

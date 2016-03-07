@@ -31,7 +31,7 @@
     
     
     self.userName.text = self.metaInfo.username;
-    self.timeStamp.text = @"5H";
+    self.timeStamp.text = self.metaInfo.finaltimeStamp;
     UIImage * tempImage =  [[CBIImageCache sharedInstance]getImageByToken:self.metaInfo.profile_picture];
     if(tempImage) {
         self.avatar.image = tempImage;
