@@ -22,9 +22,12 @@
 @property (strong, nonatomic) IBOutlet UILabel *caption;
 @property (strong, nonatomic) IBOutlet MRCircularProgressView *progressView;
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
 @property (strong ,nonatomic) NSMutableArray * urls;
 @property (strong ,nonatomic) CBIMediaUserEntity  * postEntity;
 
 
 -(void)configureCell;
+-(void)setupCell;
 @end

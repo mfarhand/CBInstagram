@@ -8,5 +8,7 @@ target 'CBInstagram' do
     pod 'AFNetworking', '~> 3.0'
     pod 'MRProgress'
     pod 'JSONModel'
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 

@@ -24,6 +24,8 @@
         self.username = [[dict objectForKey:@"user"] objectForKey:@"username"];
         self.profile_picture = [[dict objectForKey:@"user"] objectForKey:@"profile_picture"];
         self.my_profile_picture = [dict objectForKey:@"profile_picture"];
+        self.width = [[self.images objectForKey:@"standard_resolution"]valueForKey:@"width"];
+        self.height = [[self.images objectForKey:@"standard_resolution"]valueForKey:@"height"];
         
     }
     return self;

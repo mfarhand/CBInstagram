@@ -31,11 +31,11 @@
     [self.contentView layoutIfNeeded];
     self.caption.preferredMaxLayoutWidth = self.caption.bounds.size.width;
 }
--(void)configureCell
+
+
+
+-(void)setupCell
 {
-    
-    self.caption.text = self.postEntity.text;
-    self.postImage.image = [[CBIImageCache sharedInstance] getImageByToken:self.postEntity.standard_resolution_url];
     
     if (!self.postImage.image) {
         self.progressView.hidden = NO;
@@ -48,7 +48,27 @@
     {
         self.progressView.hidden = YES;
     }
+
 }
+
+-(void)configureCell
+{
+    
+    
+    float w = self.postEntity.width.floatValue;
+    float h = self.postEntity.height.floatValue;
+    float WD = [UIScreen mainScreen].bounds.size.width;
+    float scaleFactor = WD / w;
+    float newHeight = h * scaleFactor;
+    float newWidth = w * scaleFactor;
+    self.widthConstraint.constant = newWidth;
+    self.heightConstraint.constant = newHeight;
+    [self updateConstraints];
+    
+    self.caption.text = self.postEntity.text;
+    self.postImage.image = [[CBIImageCache sharedInstance] getImageByToken:self.postEntity.standard_resolution_url];
+    
+    }
 
 
 -(void)downloadContintueWithProgress:(NSProgress *)progress forToken:(NSString *)token
@@ -72,7 +92,7 @@
 -(void)handleDoubleTap:(UIGestureRecognizer*)gest
 {
     NSLog(@"\nLike");
-    UIImageView * heartPopup = [[UIImageView alloc]initWithFrame:CGRectMake((self.postImage.frame.size.width/2)-32, (self.postImage.frame.size.height/2)+32, 64, 64)];
+    UIImageView * heartPopup = [[UIImageView alloc]initWithFrame:CGRectMake((self.postImage.frame.size.width/2)-32, (self.postImage.frame.size.height/2)-32, 64, 64)];
     [heartPopup setImage:[UIImage imageNamed:@"like"]];
     heartPopup.alpha = 0;
     [self addSubview:heartPopup];

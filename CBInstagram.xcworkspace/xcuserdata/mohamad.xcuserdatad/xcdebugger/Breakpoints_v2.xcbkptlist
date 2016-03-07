@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CBInstagram/CBIMediaUserEntity.m"
-            timestampString = "478956816.279274"
+            timestampString = "479055839.886024"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-initWithDictionary:error:"
             landmarkType = "5">
          </BreakpointContent>
@@ -64,7 +64,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CBInstagram/CBIRequestManager.m"
@@ -74,22 +74,6 @@
             startingLineNumber = "140"
             endingLineNumber = "140"
             landmarkName = "-getSelfInformationWithToken:WithCopletion:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CBInstagram/CBIRequestManager.m"
-            timestampString = "478955543.741596"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-getAllOfImagesWithToken:WithCompletion:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -176,7 +160,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CBInstagram/CBILoginViewController.m"
@@ -186,6 +170,22 @@
             startingLineNumber = "62"
             endingLineNumber = "62"
             landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CBInstagram/CBIRequestManager.m"
+            timestampString = "479054431.535738"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-getAllOfImagesWithToken:WithCompletion:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

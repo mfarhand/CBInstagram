@@ -315,6 +315,7 @@
 				D1E76B7B1C8B51190090EE6B /* Resources */,
 				B96F66F0FE758C994F5115AF /* Embed Pods Frameworks */,
 				C68EE7754201D3088CC019F8 /* Copy Pods Resources */,
+				D1ECCA401C8D6BBF000685A3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -419,6 +420,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBInstagram/Pods-CBInstagram-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D1ECCA401C8D6BBF000685A3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 70cd4aae3fd5b15f806a9d6801f562090c46568c dc0e81aacfc74047e45dfdcd39bb4ff4c704db64c37cd2d6dec9ca9ac9bb8804";
 		};
 /* End PBXShellScriptBuildPhase section */
 

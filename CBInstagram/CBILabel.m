@@ -10,12 +10,4 @@
 
 @implementation CBILabel
 
-- (void)setBounds:(CGRect)bounds {
-    [super setBounds:bounds];
-    
-    if (self.preferredMaxLayoutWidth != bounds.size.width) {
-        self.preferredMaxLayoutWidth = bounds.size.width;
-        [self setNeedsUpdateConstraints];
-    }}
-
 @end

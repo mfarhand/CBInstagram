@@ -22,5 +22,7 @@
 @property (nonatomic,strong) NSString * profile_picture;
 @property (nonatomic,strong) NSString * my_profile_picture;
 @property (nonatomic,strong) NSString * bio;
+@property (nonatomic,assign) NSString * width;
+@property (nonatomic,assign) NSString * height;
 
 @end

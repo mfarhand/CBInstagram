@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Fabric with:@[[Crashlytics class]]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:64.0/255.0 green:171.0/255.0 blue:238.0/255.0 alpha:1.0]];
     [[UINavigationBar appearance] setTranslucent:NO];
     

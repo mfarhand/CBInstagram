@@ -12,7 +12,10 @@
 #import "CBIImageCache.h"
 #import "CBIHeaderPost.h"
 @interface CBIHomeViewController ()
+{
+    CBIPostCell *_CBISamplecell;
 
+}
 @property (nonatomic,strong) UIRefreshControl * refreshControl;
 
 @end
@@ -22,19 +25,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNeedsStatusBarAppearanceUpdate];
     [[CBIDownloadeQueueHandler sharedInstance]addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self.CBIPostTableView registerNib:[UINib nibWithNibName:@"CBIPostCell" bundle:nil] forCellReuseIdentifier:@"CBIPostCell"];
-    [self.CBIPostTableView registerNib:[UINib nibWithNibName:@"CBIHeaderPost" bundle:nil] forCellReuseIdentifier:@"CBIHeaderPost"];
-    
-    self.title = @"CBInstagram";
+    [self manageAppearance];
     self.shyNavBarManager.scrollView = self.CBIPostTableView;
+    [self registerXIB];
     
+
+}
+
+
+-(void)manageAppearance
+{
+    self.title = @"CBInstagram";
+    [self setNeedsStatusBarAppearanceUpdate];
     // Initialize the refresh control.
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self.CBIPostTableView addSubview:self.refreshControl];
+}
+
+-(void)registerXIB
+{
+    [self.CBIPostTableView registerNib:[UINib nibWithNibName:@"CBIPostCell" bundle:nil] forCellReuseIdentifier:@"CBIPostCell"];
+    [self.CBIPostTableView registerNib:[UINib nibWithNibName:@"CBIHeaderPost" bundle:nil] forCellReuseIdentifier:@"CBIHeaderPost"];
+    _CBISamplecell = [[UINib nibWithNibName:@"CBIPostCell" bundle:[NSBundle mainBundle]] instantiateWithOwner:nil options:nil][0];
 
 }
 
@@ -44,11 +58,6 @@
 }
 
 - (void)refresh:(UIRefreshControl *)refreshControl {
-    // Do your job, when done:
-    
-    //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-    //
-    
     dispatch_async(dispatch_get_main_queue(), ^{
         
         NSLog(@"\n\n refreshing.....");
@@ -69,21 +78,16 @@
         [[CBIDownloadeQueueHandler sharedInstance]setMainDownloadQueue:[[NSMutableArray alloc]init]];
         [[CBIDownloadeQueueHandler sharedInstance]setCurrentDownloadQueue:[[NSMutableArray alloc]init]];
         [[CBIDownloadeQueueHandler sharedInstance]setTokensDict:[[NSMutableDictionary alloc]init]];
-        
         [self.CBIPostTableView reloadData];
         [self.refreshControl endRefreshing];
     });
     
-    //    });
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
 }
-
-
-
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -100,9 +104,10 @@
 {
     static NSString *CellIdentifier = @"CBIPostCell";
     CBIPostCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    //    cell.url = [self.urls objectAtIndex:indexPath.section];
-    //    [cell configureCell];
+
     [self configureCell:cell atIndexPath:indexPath];
+    [cell setupCell];
+
     return cell;
 }
 
@@ -130,7 +135,12 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 480;
+    [self configureCell:_CBISamplecell atIndexPath:indexPath];
+    [_CBISamplecell layoutSubviews];
+    
+    CGFloat height = [_CBISamplecell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+//    NSLog(@"%f",height);
+    return height;
 }
 
 -(void)downloadDidFinishedWithToken:(NSString *)token withFileName:(NSString *)filename
