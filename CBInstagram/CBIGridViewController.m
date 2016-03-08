@@ -120,7 +120,7 @@ static NSString * const reuseIdentifier = @"CBICollectionViewCell";
     return CGSizeMake(100, 100);
     }// will be w120xh100 or w190x100
     // if the width is higher, only one image will be shown in a line
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 90);
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 120);
 }
 
 #pragma mark collection view cell paddings

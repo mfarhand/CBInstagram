@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MRProgress.h>
 @interface CBILoginViewController : UIViewController
 
 @end

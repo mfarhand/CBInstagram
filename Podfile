@@ -11,5 +11,6 @@ target 'CBInstagram' do
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'DateTools'
+    pod 'MBProgressHUD'
 end
 

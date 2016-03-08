@@ -14,7 +14,7 @@
 #import "CBISelfProvider.h"
 @interface CBILoginViewController ()<UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
-
+@property (nonatomic,strong) MRActivityIndicatorView * activityView;
 @end
 
 @implementation CBILoginViewController
@@ -28,12 +28,20 @@
     self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
     self.title = @"Login";
+    self.webView.userInteractionEnabled = NO;
+//    [self.webView addSubview:self.activityView];
+    
     
 }
 
 
 
 - (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    
+    [self.webView addSubview:self.activityView];
+    [_activityView startAnimating];
+
     if ([[[request URL] host] isEqualToString:@"instagram.com"]) {
         NSString* verifier = nil;
         NSArray* urlParams = [[[request URL] query] componentsSeparatedByString:@"&"];
@@ -88,4 +96,25 @@
     return YES;
 }
 
+
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [_activityView stopAnimating];
+    [_activityView setHidden:YES];
+    self.webView.userInteractionEnabled = YES;
+
+}
+
+-(MRActivityIndicatorView *)activityView
+{
+    if (!_activityView) {
+        _activityView = [[MRActivityIndicatorView alloc]initWithFrame:CGRectMake((self.view.frame.size.width/2)-32, (self.view.frame.size.height/2)-64, 64, 64)];
+        _activityView.backgroundColor = [UIColor clearColor];
+        _activityView.tintColor = [UIColor colorWithRed:64.0/255.0 green:171.0/255.0 blue:238.0/255.0 alpha:1.0];
+
+    }
+    [_activityView setHidden:NO];
+    return _activityView;
+}
 @end
