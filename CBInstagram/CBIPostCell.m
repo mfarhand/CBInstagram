@@ -12,11 +12,14 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    [super awakeFromNib];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     UITapGestureRecognizer * doubleTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleDoubleTap:)];
     doubleTapGesture.numberOfTapsRequired = 2;
     self.postImage.userInteractionEnabled = YES;
     [self.postImage addGestureRecognizer:doubleTapGesture];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -29,7 +32,7 @@
 {
     [super layoutSubviews];
     [self.contentView layoutIfNeeded];
-    self.caption.preferredMaxLayoutWidth = self.caption.bounds.size.width;
+//    self.caption.preferredMaxLayoutWidth = self.caption.bounds.size.width;
 }
 
 
@@ -67,6 +70,9 @@
     
     self.caption.text = self.postEntity.text;
     self.postImage.image = [[CBIImageCache sharedInstance] getImageByToken:self.postEntity.standard_resolution_url];
+    
+//    self.topCaptionConstraint.constant = 420;
+
     
     }
 

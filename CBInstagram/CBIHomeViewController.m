@@ -8,7 +8,6 @@
 
 #import "CBIHomeViewController.h"
 #import "CBIPostCell.h"
-#import <TLYShyNavBar/TLYShyNavBarManager.h>
 #import "CBIImageCache.h"
 #import "CBIHeaderPost.h"
 @interface CBIHomeViewController ()
@@ -27,7 +26,6 @@
     [super viewDidLoad];
     [[CBIDownloadeQueueHandler sharedInstance]addDelegate:self delegateQueue:dispatch_get_main_queue()];
     [self manageAppearance];
-    self.shyNavBarManager.scrollView = self.CBIPostTableView;
     [self registerXIB];
     
 
@@ -36,7 +34,7 @@
 
 -(void)manageAppearance
 {
-    self.title = @"CBInstagram";
+    self.title = @"MFInstagram";
     [self setNeedsStatusBarAppearanceUpdate];
     // Initialize the refresh control.
     self.refreshControl = [[UIRefreshControl alloc] init];

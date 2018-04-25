@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,18 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="436" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="436" height="85"/>
+                <rect key="frame" x="0.0" y="0.0" width="436" height="85.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OY-ga-hnH">
-                        <rect key="frame" x="52" y="18" width="0.0" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OY-ga-hnH">
+                        <rect key="frame" x="55" y="18" width="363" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="XOG-Tm-egz"/>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="vh1-x9-0ww"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="0.1745334201388889" green="0.015001085069444444" blue="0.2446560329861111" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="vh1-x9-0ww"/>
@@ -31,12 +35,12 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-ja-b1c">
-                        <rect key="frame" x="385" y="18" width="45" height="17"/>
+                        <rect key="frame" x="373" y="18" width="45" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="56" id="t99-Df-0SD"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="default">
                             <mask key="constraints">
@@ -45,35 +49,37 @@
                         </variation>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-Cr-Ewv">
-                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <rect key="frame" x="10" y="11" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="NvE-iP-Njn"/>
-                            <constraint firstAttribute="height" constant="40" id="Y7R-wo-pno"/>
+                            <constraint firstAttribute="width" constant="35" id="NvE-iP-Njn"/>
+                            <constraint firstAttribute="height" constant="35" id="Y7R-wo-pno"/>
                         </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="ETf-ja-b1c" firstAttribute="trailing" secondItem="3OY-ga-hnH" secondAttribute="trailing" id="3dm-JH-eb5"/>
+                    <constraint firstItem="gcG-Cr-Ewv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="43g-fi-jud"/>
                     <constraint firstItem="3OY-ga-hnH" firstAttribute="leading" secondItem="gcG-Cr-Ewv" secondAttribute="leading" id="4r6-38-vJb"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ETf-ja-b1c" secondAttribute="trailing" constant="-2" id="Efj-Ot-K1U"/>
                     <constraint firstItem="ETf-ja-b1c" firstAttribute="top" secondItem="3OY-ga-hnH" secondAttribute="bottom" constant="1" id="SKI-zD-fcj"/>
                     <constraint firstItem="ETf-ja-b1c" firstAttribute="leading" secondItem="3OY-ga-hnH" secondAttribute="trailing" constant="5" id="TfS-xS-xbE"/>
                     <constraint firstAttribute="topMargin" secondItem="gcG-Cr-Ewv" secondAttribute="top" id="hBm-hn-JYN"/>
-                    <constraint firstItem="3OY-ga-hnH" firstAttribute="leading" secondItem="gcG-Cr-Ewv" secondAttribute="trailing" constant="4" id="jNo-oN-7CU"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="gcG-Cr-Ewv" secondAttribute="leading" id="qAT-4k-334"/>
+                    <constraint firstItem="3OY-ga-hnH" firstAttribute="leading" secondItem="gcG-Cr-Ewv" secondAttribute="trailing" constant="10" id="jNo-oN-7CU"/>
                     <constraint firstItem="ETf-ja-b1c" firstAttribute="top" secondItem="3OY-ga-hnH" secondAttribute="top" id="uA6-GM-Wva"/>
                     <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="3OY-ga-hnH" secondAttribute="trailing" constant="25" id="xem-TS-L3O"/>
                     <constraint firstItem="3OY-ga-hnH" firstAttribute="centerY" secondItem="gcG-Cr-Ewv" secondAttribute="centerY" id="yqK-st-sNb"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
-                        <exclude reference="4r6-38-vJb"/>
-                        <exclude reference="xem-TS-L3O"/>
                         <exclude reference="SKI-zD-fcj"/>
                         <exclude reference="TfS-xS-xbE"/>
+                        <exclude reference="4r6-38-vJb"/>
+                        <exclude reference="xem-TS-L3O"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="avatar" destination="gcG-Cr-Ewv" id="YUe-qy-dwE"/>
                 <outlet property="timeStamp" destination="ETf-ja-b1c" id="ze0-My-OuK"/>

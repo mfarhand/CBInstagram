@@ -4,7 +4,6 @@
 # use_frameworks!
 
 target 'CBInstagram' do
-    pod 'TLYShyNavBar'
     pod 'AFNetworking', '~> 3.0'
     pod 'MRProgress'
     pod 'JSONModel'

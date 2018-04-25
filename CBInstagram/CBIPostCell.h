@@ -27,6 +27,7 @@
 @property (strong ,nonatomic) NSMutableArray * urls;
 @property (strong ,nonatomic) CBIMediaUserEntity  * postEntity;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topCaptionConstraint;
 
 -(void)configureCell;
 -(void)setupCell;

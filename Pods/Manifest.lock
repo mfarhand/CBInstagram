@@ -1,25 +1,25 @@
 PODS:
-  - AFNetworking (3.0.4):
-    - AFNetworking/NSURLSession (= 3.0.4)
-    - AFNetworking/Reachability (= 3.0.4)
-    - AFNetworking/Security (= 3.0.4)
-    - AFNetworking/Serialization (= 3.0.4)
-    - AFNetworking/UIKit (= 3.0.4)
-  - AFNetworking/NSURLSession (3.0.4):
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.0.4)
-  - AFNetworking/Security (3.0.4)
-  - AFNetworking/Serialization (3.0.4)
-  - AFNetworking/UIKit (3.0.4):
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
-  - Crashlytics (3.7.0):
-    - Fabric (~> 1.6.3)
-  - DateTools (1.7.0)
-  - Fabric (1.6.6)
-  - JSONModel (1.2.0)
-  - MBProgressHUD (0.9.2)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - DateTools (2.0.0)
+  - Fabric (1.7.6)
+  - JSONModel (1.7.0)
+  - MBProgressHUD (1.1.0)
   - MRProgress (0.8.3):
     - MRProgress/ActivityIndicator (= 0.8.3)
     - MRProgress/Blur (= 0.8.3)
@@ -48,7 +48,6 @@ PODS:
   - MRProgress/ProgressBaseClass (0.8.3)
   - MRProgress/Stopable (0.8.3):
     - MRProgress/Helper
-  - TLYShyNavBar (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -58,16 +57,26 @@ DEPENDENCIES:
   - JSONModel
   - MBProgressHUD
   - MRProgress
-  - TLYShyNavBar
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Crashlytics
+    - DateTools
+    - Fabric
+    - JSONModel
+    - MBProgressHUD
+    - MRProgress
 
 SPEC CHECKSUMS:
-  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
-  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
-  Fabric: 1abc1e59f11fa39ede6f690ef7309d8563e3ec59
-  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
-  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
-  TLYShyNavBar: d313a1c50c58cb7af744829120eaa33ca8a998ce
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6bcb2f87ba2140b920f8abb495660702dace17b9
+
+COCOAPODS: 1.5.0

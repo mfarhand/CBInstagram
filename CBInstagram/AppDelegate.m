@@ -19,12 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Fabric with:@[[Crashlytics class]]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:64.0/255.0 green:171.0/255.0 blue:238.0/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:249.0/255.0 green:249.0/255.0 blue:249.0/255.0 alpha:1.0]];
     [[UINavigationBar appearance] setTranslucent:NO];
     
     
     [[UINavigationBar appearance] setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+     @{NSForegroundColorAttributeName:[UIColor blackColor]}];
     return YES;
 }
 
